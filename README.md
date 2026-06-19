@@ -31,7 +31,7 @@ vvp sim.out            # an AHB master drives writes/reads, 6/6 self-checking
 The testbench is a small AHB-Lite master: it writes each register, reads it back,
 checks the physical `gpio_out`/`gpio_dir` pins, and reads external `gpio_in`.
 
-## Design decisions (interview prep)
+## Design notes
 
 - **Address/data pipeline.** AHB transfers are two-phase: the address, control,
   and `HSEL`/`HTRANS` are sampled in the *address phase* and registered; the
